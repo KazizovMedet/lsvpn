@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.col-6 {
+    width: 50%;
+    padding: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    padding: 45px 0;
+}
+
+.nav {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.nav-link {
+    color: #4F5665;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    transition: 1s;
+}
+
+.nav-link:hover {
+    transform: scale3d(1.5, 1.5, 1.5);
+}
+
+.nav-link::before {
+    position: absolute;
+    content: "";
+    bottom: -7px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #F53855;
+    transition: 0.6s;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+}
+
+.nav-link::after {
+    position: absolute;
+    content: "";
+    bottom: -15px;
+    left: 50%;
+    right: 50%;
+    width: 0;
+    height: 1px;
+    background-color: #F53855;
+    transition: 0.6s;
+    transform: translate(-50%, 0);
+}
+
+.nav-link:hover::after {
+    width: 70%;
+}
+
+.btn-wrapper button {
+    color: #0B132A;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.btn-wrapper button:nth-child(2) {
+    color: #F53855;
+    padding: 13px 45px;
+    border: 1px solid #F53855;
+    border-radius: 50px;
+    margin-left: 30px;
+}
+
+.title {
+    color: #0B132A;
+    font-family: Rubik;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.desc {
+    color: #4F5665;
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.main-btn {
+    border-radius: 10px;
+    background: #F53838;
+    width: 250px;
+    padding: 17px 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    transition: 0.6s;
+}
+
+.main-btn:hover {
+    box-shadow: 0px 25px 24px -20px rgba(245, 56, 56, 0.7);
+}
+
+.hero {
+    padding: 44px 0 ;
+}
